@@ -1,0 +1,19 @@
+<div id="search">
+  <div class="search-content">
+    <button type="submit" id="close">X</button>
+    <div class="search-input">
+      <form action="/" method="get">
+        <input
+          type="text"
+          name="name"
+          placeholder="Search training here.."
+          value="<%= searchOption.name %>"
+        />
+        <button type="submit">Search</button>
+      </form>
+    </div>
+    <div class="search-text">
+      <%- include('search-text-item') %>
+    </div>
+  </div>
+</div>
